@@ -109,6 +109,15 @@ module.exports = function (ctx) {
         }
       }
     }, */
+    devServer: {
+      proxy: {
+        // proxy all requests starting with /api to jsonplaceholder
+        'https://5eb65b9d55780e19cb01a3e3--friendly-wozniak-8f07d1.netlify.app': {
+          target: 'https://kapi.kakao.com',
+          changeOrigin: true,
+        }
+      }
+    },
 
     // animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations
