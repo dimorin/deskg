@@ -97,7 +97,7 @@ module.exports = function (ctx) {
       //proxy:'https://kapi.kakao.com'            
       //public:'https://kapi.kakao.com'            
     }, */
-    devServer: {
+    /* devServer: {
       proxy: {
         // proxy all requests starting with /api to jsonplaceholder
         '/api': {
@@ -108,7 +108,7 @@ module.exports = function (ctx) {
           }
         }
       }
-    },
+    }, */
 
     // animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations

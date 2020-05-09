@@ -8,7 +8,8 @@ function fetchCountryHeadline(country, category, pageSize, page){
 }
 function translationData(src_lang,  target_lang, target){    
     //return axios.get(`http://localhost:8080/v1/translation/translate?src_lang=${src_lang}&target_lang=${target_lang}&query=${target}`,
-    return axios.get(`/api/v1/translation/translate?src_lang=${src_lang}&target_lang=${target_lang}&query=${target}`,
+    //return axios.get(`/api/v1/translation/translate?src_lang=${src_lang}&target_lang=${target_lang}&query=${target}`,
+    return axios.get(`https://kapi.kakao.com/v1/translation/translate?src_lang=${src_lang}&target_lang=${target_lang}&query=${target}`,
     
         {headers: {
           'Authorization': `KakaoAK ${process.env.TRANSLATION_KEY}`,
