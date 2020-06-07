@@ -72,7 +72,7 @@ export default new Vuex.Store({
       {label:"sports", value:"sports"},
       {label:"technology", value:"technology"} 
     ],
-    country_by:'us',
+    country_by:'kr',
     category_by:'general',
     pageSize:20,
     page:1,
